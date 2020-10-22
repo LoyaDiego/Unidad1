@@ -68,7 +68,7 @@ public class Controller {
             case 8:{
                 int x=0;
                 String[] pa=new String[10];
-                String[] res=texto.split(" ");
+                String[] res=texto.split("gramos");
                 for (String palabra: res){
                     pa[x]=palabra;
                     x++;

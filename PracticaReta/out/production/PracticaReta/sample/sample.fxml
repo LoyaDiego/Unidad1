@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="32.0" layoutY="74.0" text="Receta Completa:">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtreceta" layoutX="32.0" layoutY="105.0" prefHeight="605.0" prefWidth="441.0" />
+      <Label layoutX="344.0" layoutY="14.0" text="Zacahuil">
+         <font>
+            <Font name="Berlin Sans FB" size="32.0" />
+         </font>
+      </Label>
+      <VBox layoutX="508.0" layoutY="74.0" prefHeight="650.0" prefWidth="473.0">
+         <children>
+            <Label text="Ingredientes">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="txtingredientes" prefHeight="150.0" prefWidth="200.0" />
+            <Label layoutX="10.0" layoutY="10.0" text="Preparacion">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="txtpreparacion" layoutX="10.0" layoutY="29.0" prefHeight="150.0" prefWidth="200.0" />
+            <Label layoutX="10.0" layoutY="102.0" text="Preguntas con respuestas">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="txtpreguntas" layoutX="10.0" layoutY="121.0" prefHeight="150.0" prefWidth="200.0" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#procesar" text="Procesar">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bodoni MT Black" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

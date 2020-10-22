@@ -18,7 +18,7 @@ Label lbllineas;
     try {
         File f=new File("./src/sample/archivo.txt");
         BufferedReader br=new BufferedReader((new FileReader(f)));
-        String texto="";
+        String texto=" ";
         while ((texto=br.readLine())!=null){
             txtreceta.appendText("\n"+texto);
         }
